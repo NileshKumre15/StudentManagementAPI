@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management</title>
+</head>
+<body>
+    <h1>Students</h1>
+    <button onclick="getStudents()">Load Students</button>
+    <ul id="studentList"></ul>
+
+    <script>
+        async function getStudents() {
+            const response = await fetch('/api/students');
+            const data = await response.json();
+            const list = document.getElementById('studentList');
+            list.innerHTML = '';
+            data.forEach(s => {
+                const li = document.createElement('li');
+                li.textContent = `${s.name} (${s.age}) - ${s.email}`;
+                list.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
