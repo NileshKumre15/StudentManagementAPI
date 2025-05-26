@@ -2,7 +2,7 @@ StudentManagementAPI
 
 StudentManagementAPI is a Web API built using the .NET Core 8
 
-Technologies used C#, ASP.net.Web.api core, HTML,CSS,jQuery, Bootstrap 
+Technologies used C#, ASP.net.Web.api core, HTML,CSS,jQuery, Bootstrap, EntityFramework 8
 
 Sql server
 
